@@ -1,0 +1,21 @@
+<h2>Register</h2>
+
+<form action="/register" method="post">
+    Username: <input name="username"><br><br>
+    Password: <input name="password"><br><br>
+
+    <small>
+        Password must contain:
+        <ul>
+            <li>Minimum 8 characters</li>
+            <li>1 Uppercase letter</li>
+            <li>1 Lowercase letter</li>
+            <li>1 Number</li>
+            <li>1 Special character</li>
+        </ul>
+    </small>
+
+    <button>Register</button>
+</form>
+
+<p th:text="${msg}"></p>

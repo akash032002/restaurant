@@ -1,0 +1,26 @@
+<h2>Welcome [[${user}]]</h2>
+
+<a href="/logout">
+    <button>Logout</button>
+</a>
+
+<hr>
+
+<h3>Menu</h3>
+<form action="/order" method="post">
+    <select name="item">
+        <option value="1">Pizza</option>
+        <option value="2">Burger</option>
+        <option value="3">Pasta</option>
+    </select>
+    Quantity: <input name="quantity">
+    <button>Order</button>
+</form>
+
+<h3>Track Order</h3>
+<form action="/track">
+    Order ID: <input name="id">
+    <button>Track</button>
+</form>
+
+<p th:text="${msg}"></p>

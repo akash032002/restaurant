@@ -1,0 +1,14 @@
+<h2>Login</h2>
+
+<form action="/login" method="post">
+    Username: <input name="username"><br><br>
+    Password: <input name="password"><br><br>
+    <button>Login</button>
+</form>
+
+<p th:text="${msg}"></p>
+
+<p>
+    Don't have an account?
+    <a href="/register">Register here</a>
+</p>
